@@ -11,20 +11,10 @@ void Vehicle::setManufacturer(string manufac)
   manufacturer = manufac;
 }
 
-string Vehicle::getManufacturer(string manufac)
-{
-  return manufac;
-}
-
 void Vehicle::setYearBuilt(int yBuilt) 
 {
   yearBuilt = yBuilt;
 }
-
-int Vehicle::getYearBuilt(int yBuilt) 
-{
-  return yBuilt; 
-} 
     
 void Vehicle::displayInfo(int yBuilt, string manufac) 
 {

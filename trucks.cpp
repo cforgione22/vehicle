@@ -12,11 +12,6 @@ void Truck::setTowingCapacity(int towCap)
   towingCapacity = towCap;
 }
 
-int Truck::getTowingCapacity(int towcap)  
-{
-  return towcap;
-}
-
 void Truck::displayInfo(int towCap)// calling the base function Vehicle
 {
   cout << "Towing capacity: " << towCap << endl;

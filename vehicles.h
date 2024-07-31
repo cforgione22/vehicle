@@ -15,9 +15,7 @@ class Vehicle
 
   public:
     Vehicle();
-    string getManufacturer(string);
-    void setManufacturer(string);
-    int getYearBuilt(int);  
+    void setManufacturer(string);  
     void setYearBuilt(int);
     void displayInfo(int, string);
 };
