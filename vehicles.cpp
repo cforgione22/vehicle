@@ -16,10 +16,10 @@ void Vehicle::setYearBuilt(int yBuilt)
   yearBuilt = yBuilt;
 }
     
-void Vehicle::displayInfo(int yBuilt, string manufac) 
+void Vehicle::displayInfo() 
 {
   cout << "Vehicle Information:\n";
-  cout << "Manufacturer: " << manufac << endl;
-  cout << "Year Built: " << yBuilt << endl;
+  cout << "Manufacturer: " << manufacturer << endl;
+  cout << "Year Built: " << yearBuilt << endl;
 }
 

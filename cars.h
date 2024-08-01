@@ -15,8 +15,7 @@ class Car : public Vehicle
   public:
     Car();
     void setNumberOfDoors(int);
-    using Vehicle::displayInfo;
-    void displayInfo(int);
+    void displayInfo();
 };
 
 #endif

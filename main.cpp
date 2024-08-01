@@ -15,8 +15,6 @@ void getCarInput();
 void getTruckInput();
 
 
-
-
 int main() {
   
   cout << "Vehicle Program\n\n";
@@ -33,6 +31,7 @@ int main() {
 void getVehicleInput()
 {
   Vehicle vehicle;
+  
   string manufac = " ";
   int yBuilt = 0;
   
@@ -41,7 +40,11 @@ void getVehicleInput()
   
   cout << "Enter the year built: ";
   cin >> yBuilt;
-  vehicle.displayInfo(yBuilt, manufac);
+
+  vehicle.setManufacturer(manufac);
+  vehicle.setYearBuilt(yBuilt);
+
+  vehicle.displayInfo();
 }
 
 void getCarInput()
@@ -57,8 +60,12 @@ void getCarInput()
   cin >> yBuilt;
   cout << "Enter the number of doors: ";
   cin >> numDoors;
-  car.displayInfo(yBuilt, manufac);
-  car.displayInfo(numDoors);
+
+  car.setManufacturer(manufac);
+  car.setYearBuilt(yBuilt);
+  car.setNumberOfDoors(numDoors);
+  
+  car.displayInfo();
 }
 
 void getTruckInput()
@@ -74,6 +81,8 @@ void getTruckInput()
   cin >> yBuilt;
   cout << "Enter the towing capacity: ";
   cin >> towCap;
-  truck.displayInfo(yBuilt, manufac);
-  truck.displayInfo(towCap);
+  truck.setManufacturer(manufac);
+  truck.setYearBuilt(yBuilt);
+  truck.setTowingCapacity(towCap);
+  truck.displayInfo();
 }

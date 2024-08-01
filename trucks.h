@@ -15,8 +15,7 @@ class Truck : public Vehicle
   public:
     Truck();
     void setTowingCapacity(int);
-    using Vehicle::displayInfo;
-    void displayInfo(int);
+    void displayInfo();
 };
 
 #endif

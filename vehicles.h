@@ -17,7 +17,7 @@ class Vehicle
     Vehicle();
     void setManufacturer(string);  
     void setYearBuilt(int);
-    void displayInfo(int, string);
+    void displayInfo();
 };
 
 #endif

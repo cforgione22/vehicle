@@ -11,7 +11,8 @@ void Car::setNumberOfDoors(int numDoors)
   numberOfDoors = numDoors;
 }
 
-void Car::displayInfo(int numDoors)// calling the base function Vehicle
+void Car::displayInfo()// calling the base function Vehicle
 {
-  cout << "Doors: " << numDoors << endl;
+  Vehicle::displayInfo();
+  cout << "Doors: " << numberOfDoors << endl;
 }
